@@ -6,6 +6,8 @@ every measured number in it are real.
 
 **Live:** https://main.dqlrsim6jsntx.amplifyapp.com
 
+![The pinout with the REDIS pin probed](docs/shot-probe.png)
+
 Built for the AWS Student Builder Challenge: Build Your Tech Superpower.
 
 ## The interactive feature: probe a pin
@@ -28,6 +30,8 @@ chart you can re-run, a timing diagram for my work history, and "printed" graysc
 turn to colour when touched.
 
 ## Architecture
+
+![Architecture: Amplify Hosting, API Gateway, two Lambda functions, SES and DynamoDB](docs/architecture.png)
 
 ```
 Browser ── AWS Amplify Hosting (static HTML/CSS/JS, CDN)

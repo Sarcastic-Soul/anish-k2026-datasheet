@@ -1,0 +1,5 @@
+backend/.aws-sam/
+dist/
+.taste-skill/
+*.zip
+.DS_Store

@@ -1,0 +1,9 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "anish-k2026-backend"
+resolve_s3 = true
+s3_prefix = "anish-k2026-backend"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = false

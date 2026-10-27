@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ANISH-K2026 Datasheet · Anish Kumar</title>
+<meta name="description" content="Anish Kumar, full stack and systems developer, written up as an electronic component datasheet. Probe a pin to see which projects use each skill.">
+<meta name="theme-color" content="#2e2c28">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Crect x='6' y='6' width='26' height='26' fill='%231c1b18'/%3E%3Cg stroke='%231c1b18' stroke-width='2'%3E%3Cpath d='M11 0v6M19 0v6M27 0v6M11 32v6M19 32v6M27 32v6M0 11h6M0 19h6M0 27h6M32 11h6M32 19h6M32 27h6'/%3E%3C/g%3E%3Ccircle cx='11' cy='11' r='2' fill='%23bf3d0a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- PDF viewer chrome -->
+<header class="viewer">
+  <details class="bm" id="bm">
+    <summary class="ibtn" aria-label="Bookmarks"><i class="ph ph-list"></i></summary>
+    <nav class="panel" aria-label="Document outline">
+      <b>BOOKMARKS</b>
+      <a href="#features">1 Features</a>
+      <a href="#about">3 Description (About me)</a>
+      <a href="#pinout">Pinout (probe a skill)</a>
+      <a href="#skills">4 Pin Functions (Skills)</a>
+      <a href="#specs">5 Specifications (Benchmarks)</a>
+      <a href="#achievements">6 Functional Modes (Achievements)</a>
+      <a href="#projects">7 Typical Applications (Projects)</a>
+      <a class="sub" href="#app-radish">Radish</a>
+      <a class="sub" href="#app-codemon">Codemon</a>
+      <a class="sub" href="#app-trimurl">TrimURL</a>
+      <a class="sub" href="#app-cropdoc">CropDoc</a>
+      <a class="sub" href="#app-support">Agentic Support Desk</a>
+      <a class="sub" href="#other-apps">More applications</a>
+      <a href="#experience">8 Revision History (Experience)</a>
+      <a href="#certs">9 Certifications</a>
+      <a href="#contact">10 Ordering (Contact)</a>
+    </nav>
+  </details>
+  <span class="file" title="SSDS2026 ANISH-K2026 datasheet">SSDS2026_ANISH-K2026_datasheet.pdf</span>
+  <nav class="jumps" aria-label="Quick jump">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <span class="pg" aria-live="polite">Page <span id="pgnow">1</span> / <span id="pgall">4</span></span>
+  <a class="ibtn" href="https://drive.google.com/file/d/1C5Lt3JL2GDQHJha5d4Pp3h1uKCnQkfv2/view" target="_blank" rel="noopener" aria-label="Open resume (PDF)"><i class="ph ph-download-simple"></i></a>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+
+<main class="stack">
+
+<!-- ============ PAGE 1 : COVER ============ -->
+<article class="page" data-page="1">
+  <div class="links" aria-label="Document links">
+    <a href="#projects">Product Folder</a><span>|</span>
+    <a href="#contact">Order Now</a><span>|</span>
+    <a href="https://drive.google.com/file/d/1C5Lt3JL2GDQHJha5d4Pp3h1uKCnQkfv2/view" target="_blank" rel="noopener">Technical Documents</a><span>|</span>
+    <a href="https://github.com/Sarcastic-Soul" target="_blank" rel="noopener">Tools &amp; Software</a><span>|</span>
+    <a href="https://www.linkedin.com/in/anish-kumar-852397290/" target="_blank" rel="noopener">Support &amp; Community</a>
+  </div>
+  <div class="cover-top">
+    <a class="brand" href="#" aria-label="Sarcastic Semiconductor, top of datasheet">
+      <svg class="brand-mark" viewBox="0 0 38 38" aria-hidden="true">
+        <rect x="6" y="6" width="26" height="26" fill="#1c1b18"/>
+        <g stroke="#1c1b18" stroke-width="2"><path d="M11 0v6M19 0v6M27 0v6M11 32v6M19 32v6M27 32v6M0 11h6M0 19h6M0 27h6M32 11h6M32 19h6M32 27h6"/></g>
+        <circle cx="11" cy="11" r="1.8" fill="#bf3d0a"/>
+        <text x="19.5" y="24" text-anchor="middle" font-family="IBM Plex Sans Condensed, sans-serif" font-weight="700" font-size="11.5" fill="#f5f2ea">SS</text>
+      </svg>
+      <span class="brand-name">SARCASTIC<br>SEMICONDUCTOR</span>
+    </a>
+    <p class="notice-sm">An IMPORTANT NOTICE at the end of this data sheet explains how to order samples (send a message, get a reply).</p>
+    <div class="pn">ANISH-K2026<small>SSDS2026 – OCTOBER 2026</small></div>
+  </div>
+  <div class="title">
+    <h1>ANISH-K2026 Full Stack &amp; Systems Developer IC <span class="revtag">Rev. 2026</span></h1>
+  </div>
+
+  <div class="cover-grid">
+    <div class="cover-left">
+      <div>
+        <section class="sec" id="features">
+          <h2><span class="n">1</span>Features</h2>
+          <ul class="bul">
+            <li>Builds from scratch with few dependencies: Radish runs on the JDK alone</li>
+            <li>Speaks protocols at byte level: Java NIO, RESP2/RESP3, TCP sockets</li>
+            <li>Load-tested output: k6 up to 4,000 concurrent users, 3–15 pods on Kubernetes</li>
+            <li>Agentic AI: LangGraph state machines, hybrid pgvector retrieval, MCP</li>
+            <li>On-device ML: offline crop diagnosis for 38 conditions across 14 crops</li>
+            <li>600+ DSA problems solved, Codeforces peak above 1300</li>
+          </ul>
+        </section>
+        <section class="sec" id="applications">
+          <h2><span class="n">2</span>Applications</h2>
+          <ul class="bul">
+            <li>In-memory databases and network servers</li>
+            <li>Developer tools and terminal coding agents</li>
+            <li>High-traffic web backends</li>
+            <li>Offline mobile apps for places with no signal</li>
+            <li>AI support desks and RAG pipelines</li>
+          </ul>
+        </section>
+      </div>
+      <section class="sec" id="about">
+        <h2><span class="n">3</span>Description</h2>
+        <p>The ANISH-K2026 is Anish Kumar, a full stack and systems developer studying B.Tech at IIIT Naya Raipur, Raipur, India. It takes in a problem and puts out working software, from a Redis-compatible server in plain Java to an Android app that diagnoses crop disease with no internet.</p>
+        <p>The device prefers writing the thing over importing it, and measures what it builds. Two internships are on record: Samsung PRISM R&amp;D and Aparsoft.</p>
+        <figure class="diephoto print" tabindex="0">
+          <div class="frame"><img src="assets/avatar-512.webp" alt="Illustrated portrait of Anish Kumar" width="150" height="150"></div>
+          <figcaption>Figure 3-1. Die Photo<span>Anish Kumar, handle Sarcastic-Soul. Printed in grayscale; hover or tap to power on.</span></figcaption>
+        </figure>
+        <p class="motto">“Jack of all trades, master of none, though oftentimes better than master of one.”</p>
+      </section>
+    </div>
+
+    <div class="fig-pin" id="pinout">
+      <div class="fighead">
+        <h2>Pin Configuration (Top View)</h2>
+        <div class="tools">
+          <span class="pkg" id="pkgname">RQFN-40 · 4 groups</span>
+          <button class="toggle" id="thermal" type="button" aria-pressed="false"><i class="ph ph-thermometer-simple" aria-hidden="true"></i>Thermal view</button>
+        </div>
+      </div>
+      <div class="chipwrap">
+        <svg id="chip" role="group" aria-label="Pinout diagram. Each pin is a skill. Hover, tap or press Enter on a pin to see which projects use it."></svg>
+        <aside class="scope" aria-label="Oscilloscope readout">
+          <div class="top"><b>SS-SCOPE 2026</b><span>1 proj/div</span></div>
+          <canvas id="scopecv" aria-hidden="true"></canvas>
+          <div class="read" id="readout" aria-live="polite"></div>
+        </aside>
+      </div>
+      <p class="caption">Figure 3-2. ANISH-K2026 Pinout<span class="sub">Pins are skills; J1 lists the projects they drive. Thermal view colours each pin by how many projects use it.</span></p>
+  <div class="tblwrap" style="margin-top:30px">
+    <table class="tbl" style="min-width:640px">
+      <thead><tr><th>Part number</th><th>Package</th><th>Body size (nom)</th><th>Location</th><th>Handle</th></tr></thead>
+      <tbody><tr><td class="nm">ANISH-K2026</td><td>B.Tech, IIIT Naya Raipur</td><td>1 student</td><td>Raipur, India</td><td><a href="https://github.com/Sarcastic-Soul" target="_blank" rel="noopener">Sarcastic-Soul</a></td></tr></tbody>
+    </table>
+  </div>
+  <p class="tcaption" style="margin-top:6px">Device Information<sup>(1)</sup></p>
+  <p class="fn">(1) For every way to reach the device, see <a href="#contact">Section 10, Orderable Information</a>.</p>
+    </div>
+  </div>
+
+  <footer class="pfoot">
+    <span><a href="#contact">Submit Documentation Feedback</a></span>
+    <span class="cp">Copyright © 2026, Sarcastic Semiconductor</span>
+    <span class="num">1</span>
+  </footer>
+</article>
+
+<!-- ============ PAGE 2 : SKILLS + SPECS ============ -->
+<article class="page" data-page="2">
+  <div class="phead"><strong>ANISH-K2026</strong><span>SSDS2026 – OCTOBER 2026</span></div>
+
+  <section class="sec" id="skills">
+    <h2><span class="n">4</span>Pin Configuration and Functions</h2>
+    <p>Each pin is one skill, grouped by side of the package. Press a pin name to probe it on the <a href="#pinout">pinout</a>.</p>
+    <p class="tcaption">Table 4-1. Pin Functions</p>
+    <div class="pins2">
+      <div class="tblwrap">
+        <table class="tbl pintbl" id="pintable-a">
+          <thead><tr><th class="c">No.</th><th>Name and function</th><th>Used in</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="tblwrap">
+        <table class="tbl pintbl" id="pintable-b">
+          <thead><tr><th class="c">No.</th><th>Name and function</th><th>Used in</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="fn">P = power pin. G = ground pin. Both are jokes; the other 38 are not.</p>
+
+    <h3><span class="n">4.1</span>NC Pins (no internal connection on this package)</h3>
+    <p style="font-size:14px">Also on the die, but not bonded out to a pin on this drawing:</p>
+    <p class="nc-list" id="nclist"></p>
+  </section>
+
+  <section class="sec" id="specs">
+    <h2><span class="n">5</span>Specifications</h2>
+    <div class="two">
+      <div>
+        <h3><span class="n">5.1</span>Absolute Maximum Ratings<sup>(1)</sup></h3>
+        <div class="tblwrap">
+          <table class="tbl hov">
+            <thead><tr><th></th><th class="c">Min</th><th class="c">Max</th><th class="c">Unit</th></tr></thead>
+            <tbody>
+              <tr><td>Meetings per day</td><td class="num">0</td><td class="num typ">3</td><td class="unit">meetings</td></tr>
+              <tr><td>Supply, V<sub>CHAI</sub></td><td class="num">1</td><td class="num typ">4</td><td class="unit">cups/day</td></tr>
+              <tr><td>Open browser tabs</td><td class="num">—</td><td class="num typ">120</td><td class="unit">tabs</td></tr>
+              <tr><td>“Quick sync” length</td><td class="num">—</td><td class="num typ">15</td><td class="unit">min</td></tr>
+              <tr><td>Third-party dependencies, Radish</td><td class="num">0</td><td class="num typ">0</td><td class="unit">deps</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fn">(1) Stresses beyond these may cause permanent damage to the developer. Every row is a joke except the Radish dependency count, which is real.</p>
+      </div>
+      <div>
+        <h3><span class="n">5.2</span>Thermal Information</h3>
+        <p>Turn on <b>Thermal view</b> on the <a href="#pinout">pinout</a> to see where the heat goes. The hottest pins are the ones most projects lean on:</p>
+        <ul class="bul">
+          <li><span class="mono">PGSQL</span>, <span class="mono">REDIS</span> and <span class="mono">REACT</span>: 4 projects each</li>
+          <li><span class="mono">JAVA</span> and <span class="mono">DOCKER</span>: 3 projects each</li>
+          <li><span class="mono">VCC</span> (chai): all 10, by design</li>
+        </ul>
+        <p class="fn">Fan-out counts come from the same data as Table 4-1.</p>
+      </div>
+    </div>
+
+    <h3><span class="n">5.3</span>Electrical Characteristics</h3>
+    <p style="font-size:14px">Measured on real projects. Test conditions are the ones stated in each project’s repository.</p>
+    <div class="tblwrap">
+      <table class="tbl hov" style="min-width:720px">
+        <thead><tr><th>Parameter</th><th>Test conditions</th><th class="c">Min</th><th class="c">Typ</th><th class="c">Max</th><th class="c">Unit</th></tr></thead>
+        <tbody>
+          <tr class="g"><td colspan="6" class="grp">RADISH (REDIS-COMPATIBLE SERVER, JAVA NIO)</td></tr>
+          <tr><td>GET throughput</td><td>redis-benchmark, 50 clients, AOF on</td><td class="num"></td><td class="num typ">175,000</td><td class="num"></td><td class="unit">req/s</td></tr>
+          <tr><td>SET throughput</td><td>redis-benchmark, 50 clients, AOF on</td><td class="num"></td><td class="num typ">144,000</td><td class="num"></td><td class="unit">req/s</td></tr>
+          <tr><td>Latency, p50</td><td>GET / SET / PING, -c 50 -n 100000</td><td class="num"></td><td class="num typ">0.151</td><td class="num"></td><td class="unit">ms</td></tr>
+          <tr class="g"><td colspan="6" class="grp">TRIMURL (LINK SHORTENER ON KUBERNETES)</td></tr>
+          <tr><td>Concurrent users</td><td>k6 load test</td><td class="num"></td><td class="num"></td><td class="num typ">4,000</td><td class="unit">users</td></tr>
+          <tr><td>Backend pods</td><td>Kubernetes autoscaling</td><td class="num typ">3</td><td class="num"></td><td class="num typ">15</td><td class="unit">pods</td></tr>
+          <tr class="g"><td colspan="6" class="grp">CROPDOC (OFFLINE ANDROID APP)</td></tr>
+          <tr><td>Conditions detected</td><td>On-device MobileNetV2, no network</td><td class="num"></td><td class="num typ">38</td><td class="num"></td><td class="unit">conditions</td></tr>
+          <tr><td>Crops covered</td><td>Same model</td><td class="num"></td><td class="num typ">14</td><td class="num"></td><td class="unit">crops</td></tr>
+          <tr><td>UI languages</td><td>Including Hindi, Bengali, Urdu</td><td class="num"></td><td class="num typ">11</td><td class="num"></td><td class="unit">languages</td></tr>
+          <tr class="g"><td colspan="6" class="grp">OTHER</td></tr>
+          <tr><td>Model providers (Codemon)</td><td>Bring your own API key</td><td class="num"></td><td class="num typ">~185</td><td class="num"></td><td class="unit">providers</td></tr>
+          <tr><td>Response time (BrutShop)</td><td>Redis cache in front of PostgreSQL</td><td class="num"></td><td class="num"></td><td class="num typ">200</td><td class="unit">ms</td></tr>
+          <tr><td>Faster loads (ChatApp)</td><td>IndexedDB stale-while-revalidate cache</td><td class="num"></td><td class="num typ">45</td><td class="num"></td><td class="unit">%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="pfoot">
+    <span><a href="#contact">Submit Documentation Feedback</a></span>
+    <span class="cp">Copyright © 2026, Sarcastic Semiconductor</span>
+    <span class="num">2</span>
+  </footer>
+</article>
+
+<!-- ============ PAGE 3 : ACHIEVEMENTS + PROJECTS ============ -->
+<article class="page" data-page="3">
+  <div class="phead"><strong>ANISH-K2026</strong><span>SSDS2026 – OCTOBER 2026</span></div>
+
+  <section class="sec" id="achievements">
+    <h2><span class="n">6</span>Detailed Description</h2>
+    <p>The ANISH-K2026 covers many trades on purpose: systems code in Java and Rust, backends in Spring Boot and FastAPI, frontends in React and Next.js, mobile in React Native, and AI pipelines in LangGraph. It has three functional modes on record.</p>
+    <div class="metrics">
+      <div><span class="k">Problem solving</span><div class="v">600+</div><p><b>DSA problems solved</b> across LeetCode and Codeforces, with a Codeforces peak rating above 1300.</p></div>
+      <div><span class="k">Competition</span><div class="v">1st</div><p><b>E-Cell Hackathon winner.</b> Won the inter-college hackathon with a full-stack build made against the clock.</p></div>
+      <div><span class="k">Leadership</span><div class="v">200+</div><p><b>Coding Club core member.</b> Ran a 3-day coding fest with 13 events and over 200 active participants.</p></div>
+    </div>
+    <p class="tcaption" style="margin-top:8px">Table 6-1. Device Functional Modes</p>
+  </section>
+
+  <section class="sec" id="projects">
+    <h2><span class="n">7</span>Application and Implementation</h2>
+    <p>The circuits below are real projects. Each shows its data path as a block diagram; press <b>Send a request</b> to trace one through. U1, in black, marks the part the device built itself.</p>
+
+    <div class="app" id="app-radish">
+      <h3><span class="n">7.1</span>Radish: Redis-Compatible Server in Java</h3>
+      <div class="app-grid">
+        <figure style="margin:0">
+          <div class="bd" data-run="GET served from memory. Measured p50 latency: 0.151 ms. The AOF write happens off the hot path.">
+            <div class="bd-row" data-lab="Request path"><span class="blk x">redis-cli</span><span class="ar"></span><span class="blk">TCP :6379<br>RESP2 · RESP3</span><span class="ar"></span><span class="blk u">U1 · NIO event loop</span><span class="ar"></span><span class="blk">Keyspace</span></div>
+            <div class="bd-row" data-lab="Persistence (off the hot path)"><span class="blk">Keyspace</span><span class="ar"></span><span class="blk u">AOF thread</span><span class="ar"></span><span class="blk x">Disk: AOF + RDB</span></div>
+            <div class="bd-row" data-lab="Replication"><span class="blk u">Leader</span><span class="ar"></span><span class="blk">Replica</span></div>
+          </div>
+          <div class="figbar"><p class="caption">Figure 7-1. Radish Typical Application</p><button class="runbtn" type="button"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>Send a request</button></div>
+          <p class="runlog" aria-live="polite"></p>
+        </figure>
+        <div>
+          <h4>Design Requirements</h4>
+          <div class="tblwrap"><table class="tbl"><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
+            <tr><td>GET / SET throughput</td><td class="mono">~175K / ~144K req/s</td></tr>
+            <tr><td>Clients, persistence</td><td>50 clients, AOF on</td></tr>
+            <tr><td>Features</td><td>Replication, AOF + RDB, pub/sub, transactions</td></tr>
+            <tr><td>Dependencies</td><td>None, only the JDK</td></tr>
+          </tbody></table></div>
+          <h4>Detailed Design Procedure</h4>
+          <p>Speaks RESP2 and RESP3, so redis-cli and normal Redis client libraries connect to it unchanged. One Java NIO event loop serves every client, and a background thread handles AOF writes so the hot path never waits on disk.</p>
+          <div class="links-row"><a href="https://github.com/Sarcastic-Soul/Radish" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>Source</a><span class="tags">Java · Java NIO · RESP · TCP · Docker</span></div>
+        </div>
+      </div>
+      <div class="two" style="margin-top:22px">
+        <figure class="chart" id="radfig" style="margin:0">
+          <svg viewBox="0 0 520 226" role="img" aria-label="Bar chart: Radish throughput by command. PING 151K, SET 144K, GET 175K, HSET 164K, LPUSH 159K requests per second.">
+            <g id="radchart"></g>
+          </svg>
+          <div class="figbar"><p class="caption">Figure 7-2. Radish Throughput vs Command<span class="sub">redis-benchmark -c 50 -n 100000 -q, AOF everysec</span></p><button class="runbtn" id="rerun" type="button"><i class="ph ph-arrow-clockwise" aria-hidden="true"></i>Re-run benchmark</button></div>
+        </figure>
+        <div>
+          <p class="timing-read" id="radread" aria-live="polite">Hover or tap a bar to read it.</p>
+          <p>All five commands stay between 144K and 175K requests per second with a median latency of 0.151 ms. AOF everysec, RDB snapshots and LRU eviction were all on during the run.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="app" id="app-codemon">
+      <h3><span class="n">7.2</span>Codemon: Terminal Coding Agent</h3>
+      <div class="app-grid">
+        <figure style="margin:0">
+          <div class="bd" data-run="Edit shown as a diff and approved before it reached disk. Session saved to SQLite, so it can be resumed or rewound.">
+            <div class="bd-row" data-lab="Turn"><span class="blk x">Prompt</span><span class="ar"></span><span class="blk">Model (~185 providers)</span><span class="ar"></span><span class="blk">Tool call</span></div>
+            <div class="bd-row" data-lab="Safety"><span class="blk u">U1 · Permission gate</span><span class="ar"></span><span class="blk">Diff shown</span><span class="ar"></span><span class="blk x">Disk</span></div>
+            <div class="bd-row" data-lab="State"><span class="blk">Session</span><span class="ar"></span><span class="blk u">SQLite</span><span class="ar"></span><span class="blk">Resume · Rewind</span></div>
+          </div>
+          <div class="figbar"><p class="caption">Figure 7-3. Codemon Typical Application</p><button class="runbtn" type="button"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>Send a request</button></div>
+          <p class="runlog" aria-live="polite"></p>
+        </figure>
+        <div>
+          <h4>Design Requirements</h4>
+          <div class="tblwrap"><table class="tbl"><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
+            <tr><td>Install</td><td>One binary built with Bun, no Node or npm</td></tr>
+            <tr><td>Tool permissions</td><td>4 classes: read, write, bash, network</td></tr>
+            <tr><td>Extras</td><td>MCP servers, sub-agents, plan mode, headless CI mode</td></tr>
+          </tbody></table></div>
+          <h4>Detailed Design Procedure</h4>
+          <p>Streams answers, shows every file edit as a diff before it touches disk, and asks before running anything risky. Sessions live in SQLite, so you can resume one or roll back all of its file changes.</p>
+          <div class="links-row"><a href="https://github.com/Sarcastic-Soul/codemon" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>Source</a><a href="https://github.com/Sarcastic-Soul/codemon/releases/latest" target="_blank" rel="noopener"><i class="ph ph-download-simple" aria-hidden="true"></i>Get the binary</a><span class="tags">TypeScript · Bun · Ink · SQLite · MCP</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app" id="app-trimurl">
+      <h3><span class="n">7.3</span>TrimURL: Link Shortener Under Heavy Load</h3>
+      <div class="app-grid">
+        <figure style="margin:0">
+          <div class="bd" data-run="Redirect served from cache. The click went onto the Valkey stream and gets written later in a batch.">
+            <div class="bd-row" data-lab="Redirect (read path)"><span class="blk x">GET /abc</span><span class="ar"></span><span class="blk">Caffeine</span><span class="ar"></span><span class="blk">Valkey</span><span class="ar"></span><span class="blk">PostgreSQL</span></div>
+            <div class="bd-row" data-lab="Click (write path, async)"><span class="blk">Click</span><span class="ar"></span><span class="blk u">U1 · Valkey stream</span><span class="ar"></span><span class="blk">Consumer group</span><span class="ar"></span><span class="blk x">Batch insert</span></div>
+          </div>
+          <div class="figbar"><p class="caption">Figure 7-4. TrimURL Typical Application</p><button class="runbtn" type="button"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>Send a request</button></div>
+          <p class="runlog" aria-live="polite"></p>
+          <figure class="print" tabindex="0" style="margin:14px 0 0">
+            <div class="shot"><img src="assets/url-shortener-grafana.webp" alt="Grafana dashboard showing JVM memory and HTTP latency for the TrimURL backend" loading="lazy" width="1400" height="855"></div>
+            <figcaption class="caption">Figure 7-5. Grafana: TrimURL JVM metrics (Micrometer)<span class="sub">Printed in grayscale. Hover or tap any figure to power it on.</span></figcaption>
+          </figure>
+        </figure>
+        <div>
+          <h4>Design Requirements</h4>
+          <div class="tblwrap"><table class="tbl"><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
+            <tr><td>Backend pods</td><td class="mono">3 to 15, autoscaled</td></tr>
+            <tr><td>Load test</td><td class="mono">k6, 4,000 concurrent users</td></tr>
+            <tr><td>Safety</td><td>Per-user rate limits, password links, click limits, hashed-IP analytics</td></tr>
+            <tr><td>Deploy, observability</td><td>Kubernetes, Helm (3 environments), Prometheus, Grafana, Loki</td></tr>
+          </tbody></table></div>
+          <div class="links-row"><a href="https://github.com/Sarcastic-Soul/springboot-url-shortner" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>Source</a><span class="tags">Spring Boot · React · Valkey · K8s · Helm · k6</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app" id="app-cropdoc">
+      <h3><span class="n">7.4</span>CropDoc: Offline Leaf Diagnosis</h3>
+      <div class="app-grid">
+        <figure style="margin:0">
+          <div class="bd" data-run="Disease named on the phone, treatment and dose worked out. Network used: none.">
+            <div class="bd-row" data-lab="Diagnosis"><span class="blk x">Leaf photo</span><span class="ar"></span><span class="blk u">U1 · MobileNetV2 (TFLite)</span><span class="ar"></span><span class="blk">Disease</span><span class="ar"></span><span class="blk">Treatment + dose</span></div>
+            <div class="bd-row" data-lab="Assistant"><span class="blk x">Voice question</span><span class="ar"></span><span class="blk u">SmolLM2 on llama.cpp</span><span class="ar"></span><span class="blk">Voice answer</span></div>
+          </div>
+          <div class="figbar"><p class="caption">Figure 7-6. CropDoc Typical Application (no network)</p><button class="runbtn" type="button"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>Send a request</button></div>
+          <p class="runlog" aria-live="polite"></p>
+          <div class="phones">
+            <div class="phone print" tabindex="0"><img src="assets/cropdoc-home.webp" alt="CropDoc home screen with camera, upload and batch scan buttons" loading="lazy" width="480" height="1067"></div>
+            <div class="phone print" tabindex="0"><img src="assets/cropdoc-diagnosis.webp" alt="CropDoc diagnosis: tomato mosaic virus at 99% confidence" loading="lazy" width="480" height="1067"></div>
+            <div class="phone print" tabindex="0"><img src="assets/cropdoc-ask.webp" alt="CropDoc offline assistant answering a question" loading="lazy" width="480" height="1067"></div>
+          </div>
+          <p class="caption">Figure 7-7. CropDoc screens: home, diagnosis, assistant</p>
+        </figure>
+        <div>
+          <h4>Design Requirements</h4>
+          <div class="tblwrap"><table class="tbl"><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
+            <tr><td>Coverage</td><td class="mono">38 conditions, 14 crops</td></tr>
+            <tr><td>Network</td><td>None needed, fully offline</td></tr>
+            <tr><td>Languages</td><td>11, including Hindi, Bengali and Urdu</td></tr>
+            <tr><td>Origin</td><td>Built at NextStep Hacks 2026</td></tr>
+          </tbody></table></div>
+          <h4>Detailed Design Procedure</h4>
+          <p>An Android app for farmers working where there is no data connection. The on-device model names the disease, then the app suggests a targeted treatment and works out the dose, so farmers spray less and spray the right thing.</p>
+          <div class="links-row"><a href="https://github.com/Sarcastic-Soul/CropDoc" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>Source</a><a href="https://github.com/Sarcastic-Soul/CropDoc/releases/latest" target="_blank" rel="noopener"><i class="ph ph-download-simple" aria-hidden="true"></i>Download APK</a><a href="https://github.com/Sarcastic-Soul/CropDoc/releases/download/v1.0.0/CropDoc-demo.mp4" target="_blank" rel="noopener"><i class="ph ph-play" aria-hidden="true"></i>Demo video</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app" id="app-support">
+      <h3><span class="n">7.5</span>Agentic Support Desk</h3>
+      <div class="app-grid">
+        <figure style="margin:0">
+          <div class="bd" data-run="Draft checked by the verify step, then sent. Low confidence would hand it to a human with a summary and timeline.">
+            <div class="bd-row" data-lab="Ticket lifecycle (one LangGraph state machine)"><span class="blk x">Web · WhatsApp · Email · Voice</span><span class="ar"></span><span class="blk">Classify</span><span class="ar"></span><span class="blk">Retrieve: pgvector + FTS</span></div>
+            <div class="bd-row" data-lab="Act and answer"><span class="blk">Orders, payments</span><span class="ar"></span><span class="blk u">U1 · Verify</span><span class="ar"></span><span class="blk">Reply</span><span class="ar"></span><span class="blk x">or human</span></div>
+          </div>
+          <div class="figbar"><p class="caption">Figure 7-8. Support Desk Typical Application</p><button class="runbtn" type="button"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>Send a request</button></div>
+          <p class="runlog" aria-live="polite"></p>
+        </figure>
+        <div>
+          <h4>Design Requirements</h4>
+          <div class="tblwrap"><table class="tbl"><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>
+            <tr><td>Channels</td><td>4, behind one state machine</td></tr>
+            <tr><td>Retrieval</td><td>Hybrid: pgvector + full-text search</td></tr>
+            <tr><td>Handoff</td><td>Checkpointed: human hands back, AI resumes</td></tr>
+            <tr><td>Cost to run</td><td>Laptop, local embeddings, no paid services</td></tr>
+          </tbody></table></div>
+          <div class="links-row"><a href="https://github.com/Sarcastic-Soul/agentic-customer-support-ticket-system" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>Source</a><span class="tags">Python · FastAPI · LangGraph · pgvector · Redis</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="other-apps" class="app">
+      <h3><span class="n">7.6</span>More Applications</h3>
+      <div class="tblwrap">
+        <table class="tbl hov" style="min-width:680px">
+          <thead><tr><th style="width:130px">Application</th><th>What it does</th><th>Measured</th><th>Links</th></tr></thead>
+          <tbody>
+            <tr id="app-foolscap"><td class="nm">Foolscap</td><td>Linux PDF toolkit: merge, split, compress and OCR. One Rust core crate; a CLI and a GTK4 app call the same functions.</td><td>Debian + Flatpak packages</td><td><a href="https://github.com/Sarcastic-Soul/Foolscap" target="_blank" rel="noopener">Source</a></td></tr>
+            <tr id="app-brutshop"><td class="nm">BrutShop</td><td>Neo-brutalist store with Razorpay checkout, JWT role-based access and live wishlist alerts.</td><td class="mono">&lt; 200 ms with Redis</td><td><a href="https://github.com/Sarcastic-Soul/E-commerce-Sprinboot" target="_blank" rel="noopener">Source</a> · <a href="https://springboot-ecommerce-latest-ctgu.onrender.com/" target="_blank" rel="noopener">Demo</a><sup>(1)</sup></td></tr>
+            <tr id="app-chatapp"><td class="nm">ChatApp</td><td>Real-time chat over Socket.IO with WebRTC calls, AES-256 encryption and Gemini smart replies.</td><td class="mono">45% faster loads</td><td><a href="https://github.com/Sarcastic-Soul/ChatApp" target="_blank" rel="noopener">Source</a> · <a href="https://socket-chat-nine-tau.vercel.app/" target="_blank" rel="noopener">Demo</a></td></tr>
+            <tr id="app-syllabai"><td class="nm">SyllabAI</td><td>Turns a topic or a PDF into a course with quizzes, cheat sheets and flashcards. Tracks streaks.</td><td>Next.js Server Actions</td><td><a href="https://github.com/Sarcastic-Soul/SyllabAI" target="_blank" rel="noopener">Source</a> · <a href="https://syllab-ai-sarcastic-soul.vercel.app/" target="_blank" rel="noopener">Demo</a></td></tr>
+            <tr id="app-guideweave"><td class="nm">Guide Weave</td><td>Visual how-to guides from product manuals. Multimodal RAG over ChromaDB with a local LLM. Built at Samsung PRISM.</td><td>Custom retrieval benchmarks</td><td><a href="https://github.com/LakraAnshul/Samsung_Prism" target="_blank" rel="noopener">Source</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fn">(1) Free-tier host; the first load can take about 30 s.</p>
+      <div class="other">
+        <figure class="print" tabindex="0"><div class="shot"><img src="assets/brutshop.webp" alt="BrutShop product grid in a neo-brutalist style" loading="lazy" width="1400" height="1017"></div><figcaption class="caption">Figure 7-9. BrutShop</figcaption></figure>
+        <figure class="print" tabindex="0"><div class="shot"><img src="assets/chatapp.webp" alt="ChatApp group conversation in dark mode" loading="lazy" width="1400" height="825"></div><figcaption class="caption">Figure 7-10. ChatApp</figcaption></figure>
+        <figure class="print" tabindex="0"><div class="shot"><img src="assets/syllabai.webp" alt="SyllabAI dashboard with course progress cards" loading="lazy" width="1400" height="838"></div><figcaption class="caption">Figure 7-11. SyllabAI</figcaption></figure>
+      </div>
+    </section>
+  </section>
+
+  <footer class="pfoot">
+    <span><a href="#contact">Submit Documentation Feedback</a></span>
+    <span class="cp">Copyright © 2026, Sarcastic Semiconductor</span>
+    <span class="num">3</span>
+  </footer>
+</article>
+
+<!-- ============ PAGE 4 : EXPERIENCE + CERTS + CONTACT ============ -->
+<article class="page" data-page="4">
+  <div class="phead"><strong>ANISH-K2026</strong><span>SSDS2026 – OCTOBER 2026</span></div>
+
+  <section class="sec" id="experience">
+    <h2><span class="n">8</span>Revision History</h2>
+    <p>Every role the device has held, drawn as a timing diagram. Move across it (or focus it and use the arrow keys) to see which lines were high in a given month.</p>
+    <figure class="timing" style="margin:0 0 8px">
+      <svg id="timing" tabindex="0" role="img" aria-label="Timing diagram, September 2025 to October 2026. B.Tech ongoing throughout. Samsung PRISM R&amp;D intern October 2025 to August 2026. Aparsoft software engineering intern June to August 2026. Open source work on activity-frames during 2026."></svg>
+      <p class="timing-read" id="timeread" aria-live="polite"></p>
+      <figcaption class="caption">Figure 8-1. Role Timing, September 2025 to October 2026</figcaption>
+    </figure>
+
+    <div class="rev" data-role="oss">
+      <div class="rh"><b>Revision C · Open Source Contributor</b><span class="when">2026</span></div>
+      <div class="role"><a href="https://github.com/nossa-y/activity-frames/" target="_blank" rel="noopener">nossa-y/activity-frames</a> · GitHub (remote)</div>
+      <ul class="bul">
+        <li>Contributed to activity-frames, the engine behind Nocta, which turns local screen activity into structured frames that AI agents can read.</li>
+        <li>Worked on the Python and Model Context Protocol (MCP) code that compiles sessions, so agents can replay a workflow and build context without spending tokens.</li>
+      </ul>
+      <p class="tags">Python · MCP · SQLite · React · TypeScript</p>
+    </div>
+    <div class="rev" data-role="aparsoft">
+      <div class="rh"><b>Revision B · Software Engineering Intern</b><span class="when">JUN 2026 – AUG 2026</span></div>
+      <div class="role">Aparsoft Private Limited · Bangalore (remote) · <a href="https://drive.google.com/file/d/1mFYXIqGJotL_iXloaLr13juR-zpmkH85/view" target="_blank" rel="noopener">Certificate</a></div>
+      <ul class="bul">
+        <li>12-week internship in full-stack and agentic AI work on an educational AI chatbot platform (Django REST Framework, Next.js, LangChain/LangGraph).</li>
+        <li>Found and fixed bugs in the Next.js frontend of a RAG system backed by PostgreSQL (pgvector) and Redis.</li>
+      </ul>
+      <p class="tags">Next.js · Django REST · LangChain · PostgreSQL (pgvector) · Redis</p>
+    </div>
+    <div class="rev" data-role="prism">
+      <div class="rh"><b>Revision A · R&amp;D Intern</b><span class="when">OCT 2025 – AUG 2026</span></div>
+      <div class="role">Samsung PRISM R&amp;D Institute · Bangalore (remote) · <a href="https://drive.google.com/file/d/1K1s2R5DibTPhC9Yc4dGwsNVBW6LCKZhW/view" target="_blank" rel="noopener">Certificate</a></div>
+      <ul class="bul">
+        <li>Built Guide Weave, an AI tool that turns product manuals into step-by-step visual guides, using a multimodal RAG pipeline with ChromaDB to pull matching text and images from the manuals.</li>
+        <li>Ran the LLM locally so no data left the machine, and wrote benchmarks to raise retrieval accuracy and cut response time.</li>
+      </ul>
+      <p class="tags">Multimodal RAG · ChromaDB · Local LLM · Python · Benchmarking</p>
+    </div>
+  </section>
+
+  <section class="sec" id="certs">
+    <h2><span class="n">9</span>Device and Documentation Support</h2>
+    <div class="tblwrap">
+      <table class="tbl hov" style="min-width:620px">
+        <thead><tr><th>Certificate</th><th>Category</th><th>Scope</th><th>Verify</th></tr></thead>
+        <tbody>
+          <tr><td>Oracle Data Platform 2025 Certified Foundations Associate</td><td>Oracle Certified</td><td>Basics of Oracle’s data services: databases, storage and data tools on Oracle Cloud.</td><td><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=5C0E219F2193E91F3B5F545705B067F53C473829CE03CA826F8762A832A2410A" target="_blank" rel="noopener">Badge</a></td></tr>
+          <tr><td>Postman API Fundamentals Student Expert</td><td>Certification</td><td>Earned March 2025 for building, testing and documenting APIs in Postman.</td><td><a href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FLHO5EhdSTIaKZLaIcLUU9Q%3Fidentity__email%3Danishisbusy%2540gmail.com&amp;identity__email=anishisbusy@gmail.com" target="_blank" rel="noopener">Badge</a></td></tr>
+          <tr><td>Samsung PRISM Internship</td><td>Internship</td><td>October 2025 to August 2026, building Guide Weave.</td><td><a href="https://drive.google.com/file/d/1K1s2R5DibTPhC9Yc4dGwsNVBW6LCKZhW/view" target="_blank" rel="noopener">Certificate</a></td></tr>
+          <tr><td>Aparsoft Internship</td><td>Internship</td><td>12 weeks of full-stack and agentic AI work, June to August 2026.</td><td><a href="https://drive.google.com/file/d/1mFYXIqGJotL_iXloaLr13juR-zpmkH85/view" target="_blank" rel="noopener">Certificate</a></td></tr>
+          <tr><td>Holopin Badges</td><td>Open Source</td><td>Badges from open-source events and contributions.</td><td><a href="https://holopin.io/@sarcasticsoul" target="_blank" rel="noopener">Board</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tcaption" style="margin-top:6px">Table 9-1. Certifications</p>
+  </section>
+
+  <section class="sec" id="contact">
+    <h2><span class="n">10</span>Packaging and Orderable Information</h2>
+    <div class="two">
+      <div>
+        <h3><span class="n">10.1</span>Package Information (Education)</h3>
+        <figure class="pkg-draw" style="margin:0">
+          <svg viewBox="0 0 420 220" role="img" aria-label="Package drawing: B.Tech, IIIT Naya Raipur, Raipur, India">
+            <rect x="110" y="40" width="200" height="130" fill="none" stroke="#1c1b18" stroke-width="1.5"/>
+            <rect x="122" y="52" width="176" height="106" fill="none" stroke="#1c1b18" stroke-width=".75" stroke-dasharray="4 3"/>
+            <circle cx="132" cy="62" r="3.5" fill="#1c1b18"/>
+            <text x="210" y="96" text-anchor="middle" font-weight="600" style="font-size:15px">B.TECH</text>
+            <text x="210" y="116" text-anchor="middle">IIIT NAYA RAIPUR</text>
+            <text x="210" y="134" text-anchor="middle" fill="#4a473f">RAIPUR, INDIA</text>
+            <g class="dimg">
+              <path class="dim" d="M110 30V18M310 30V18M110 24H310" stroke="#1c1b18" stroke-width=".75" fill="none"/>
+              <path d="M110 24l7 -3v6zM310 24l-7 -3v6z" fill="#1c1b18"/>
+              <text x="210" y="14" text-anchor="middle">4 YR PROGRAM (NOM)</text>
+            </g>
+            <g class="dimg">
+              <path class="dim" d="M320 40H340M320 170H340M332 40V170" stroke="#1c1b18" stroke-width=".75" fill="none"/>
+              <path d="M332 40l-3 7h6zM332 170l-3 -7h6z" fill="#1c1b18"/>
+              <text x="342" y="108">1 STUDENT</text>
+            </g>
+            <text x="210" y="204" text-anchor="middle">ALL DIMENSIONS ARE JOKES EXCEPT THE INSTITUTE.</text>
+          </svg>
+          <figcaption class="caption">Figure 10-1. Package Outline</figcaption>
+        </figure>
+        <h3><span class="n">10.2</span>Orderable Devices</h3>
+        <div class="tblwrap">
+          <table class="tbl hov">
+            <thead><tr><th>Orderable device</th><th>Status</th><th>Channel</th></tr></thead>
+            <tbody>
+              <tr><td class="nm">ANISH-K2026-MAIL</td><td>ACTIVE</td><td><a href="mailto:anishisbusy@gmail.com">anishisbusy@gmail.com</a></td></tr>
+              <tr><td class="nm">ANISH-K2026-GH</td><td>ACTIVE</td><td><a href="https://github.com/Sarcastic-Soul" target="_blank" rel="noopener">github.com/Sarcastic-Soul</a></td></tr>
+              <tr><td class="nm">ANISH-K2026-LI</td><td>ACTIVE</td><td><a href="https://www.linkedin.com/in/anish-kumar-852397290/" target="_blank" rel="noopener">LinkedIn</a></td></tr>
+              <tr><td class="nm">ANISH-K2026-CV</td><td>ACTIVE</td><td><a href="https://drive.google.com/file/d/1C5Lt3JL2GDQHJha5d4Pp3h1uKCnQkfv2/view" target="_blank" rel="noopener">Resume (PDF)</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3><span class="n">10.3</span>Request Samples</h3>
+        <form class="order" id="orderform" novalidate>
+          <h4>Sample request form</h4>
+          <label for="part">Part</label>
+          <select id="part" name="part">
+            <option value="ANISH-K2026-INT (internship)">ANISH-K2026-INT · Internship</option>
+            <option value="ANISH-K2026-FT (full-time role)">ANISH-K2026-FT · Full-time role</option>
+            <option value="ANISH-K2026-COL (collaboration)">ANISH-K2026-COL · Collaboration</option>
+            <option value="ANISH-K2026-HI (say hi)">ANISH-K2026-HI · Just saying hi</option>
+          </select>
+          <div class="row2">
+            <div><label for="oname">Your name</label><input id="oname" name="name" autocomplete="name" required></div>
+            <div><label for="oemail">Your email (for the reply)</label><input id="oemail" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="osite">Website</label><input id="osite" name="website" tabindex="-1" autocomplete="off"></div>
+          <label for="omsg">Message</label>
+          <textarea id="omsg" name="message" required placeholder="What would you like to build?"></textarea>
+          <div class="actions">
+            <button class="runbtn" type="submit"><i class="ph ph-package" aria-hidden="true"></i>Request samples</button>
+            <span class="status" id="orderstatus" aria-live="polite">Lead time: usually a day.</span>
+          </div>
+        </form>
+        <div class="notice"><b>IMPORTANT NOTICE.</b> Sarcastic Semiconductor is a joke company and the ANISH-K2026 is not for sale. The developer, the projects, the skills and every measured number in this data sheet are real.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pfoot">
+    <span><a href="mailto:anishisbusy@gmail.com?subject=ANISH-K2026%20datasheet%20feedback">Submit Documentation Feedback</a></span>
+    <span class="cp">Copyright © 2026, Sarcastic Semiconductor</span>
+    <span class="num">4</span>
+  </footer>
+</article>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

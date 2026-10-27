@@ -1,0 +1,101 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  ANISH-K2026 datasheet backend. Two Lambda functions behind one HTTP API:
+  the "Request samples" form (SES email) and the pin probe counter (DynamoDB).
+
+Parameters:
+  SiteOrigin:
+    Type: String
+    Default: https://main.dqlrsim6jsntx.amplifyapp.com
+    Description: Amplify URL allowed to call the API (CORS).
+  MailAddress:
+    Type: String
+    Default: anishisbusy@gmail.com
+    Description: Verified SES identity. Used as both sender and recipient.
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    Architectures: [arm64]
+    MemorySize: 128
+    Timeout: 5
+    LoggingConfig:
+      LogFormat: JSON
+
+Resources:
+  Api:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - !Ref SiteOrigin
+          - http://localhost:8080
+        AllowMethods: [GET, POST, OPTIONS]
+        AllowHeaders: [content-type]
+        MaxAge: 600
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 20
+        ThrottlingRateLimit: 10
+
+  ProbeTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pin
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pin
+          KeyType: HASH
+
+  OrderFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: order.handler
+      CodeUri: src/
+      Environment:
+        Variables:
+          MAIL: !Ref MailAddress
+      Policies:
+        - Statement:
+            - Effect: Allow
+              Action: ses:SendEmail
+              Resource: !Sub arn:aws:ses:${AWS::Region}:${AWS::AccountId}:identity/${MailAddress}
+      Events:
+        Order:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref Api
+            Path: /order
+            Method: POST
+
+  ProbeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: probe.handler
+      CodeUri: src/
+      Environment:
+        Variables:
+          TABLE: !Ref ProbeTable
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref ProbeTable
+      Events:
+        Count:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref Api
+            Path: /probes
+            Method: GET
+        Probe:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref Api
+            Path: /probes
+            Method: POST
+
+Outputs:
+  ApiUrl:
+    Description: Base URL for js/app.js (API_BASE)
+    Value: !Sub https://${Api}.execute-api.${AWS::Region}.amazonaws.com
